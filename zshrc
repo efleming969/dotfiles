@@ -15,9 +15,10 @@ compdef t3=tree
 alias tn='tree -I node_modules'
 compdef tn=tree
 
-alias ls='ls --color=auto'
-alias ll='ls -lh'
-alias la='ls -lAh'
+
+alias ls='LANG=C ls --color=auto --human-readable'
+alias ll='ls -l --group-directories-first'
+alias la='ll --all'
 
 # use selection for xclip
 alias xclip='xclip -selection c'
