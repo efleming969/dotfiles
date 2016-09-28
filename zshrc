@@ -18,13 +18,14 @@ compdef tn=tree
 
 alias ls='LANG=C ls --color=auto --human-readable'
 alias ll='ls -l --group-directories-first'
-alias la='ll --all'
+alias la='ll --almost-all'
 
 # use selection for xclip
 alias xclip='xclip -selection c'
 
 # alias from running elm in a docker image
 alias elm='docker run -it --rm -v "$(pwd):/code" -w "/code" -e "HOME=/tmp" -u $UID:$GID -p 8000:8000 codesimple/elm:0.16'
+alias jekyll='docker run -it --rm -v "$(pwd):/srv/jekyll" -p 4000:4000 jekyll/jekyll:latest jekyll serve'
 
 source ~/.zsh/git.zsh
 
@@ -60,6 +61,5 @@ PACKAGES_NPM="$HOME/.npm-packages"
 PACKAGES_GEM="$HOME/.gem/ruby/2.2.0"
 
 # path settings
-export PATH="$HOME/bin:$PACKAGES_NPM/bin:$PACKAGES_GEM/bin:$PATH"
+export PATH="$HOME/Documents/bin:$PACKAGES_NPM/bin:$PACKAGES_GEM/bin:$PATH"
 
-export TERMINAL=xfce4-terminal
