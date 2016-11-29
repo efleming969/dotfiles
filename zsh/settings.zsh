@@ -19,24 +19,24 @@ setopt incappendhistory
 setopt extendedhistory
 
 # Time to wait for additional characters in a sequence
-KEYTIMEOUT=1 # corresponds to 10ms
+#KEYTIMEOUT=1 # corresponds to 10ms
 
 # Use vim as the editor
-export EDITOR=vim
+#export EDITOR=vim
 
 # Use vim style line editing in zsh
-bindkey -v
+#bindkey -v
 # Movement
-bindkey -a 'gg' beginning-of-buffer-or-history
-bindkey -a 'G' end-of-buffer-or-history
+#bindkey -a 'gg' beginning-of-buffer-or-history
+#bindkey -a 'G' end-of-buffer-or-history
 # Undo
-bindkey -a 'u' undo
-bindkey -a '^R' redo
+#bindkey -a 'u' undo
+#bindkey -a '^R' redo
 # Edit line
-bindkey -a '^V' edit-command-line
+#bindkey -a '^V' edit-command-line
 # Backspace
-bindkey '^?' backward-delete-char
-bindkey '^H' backward-delete-char
+#bindkey '^?' backward-delete-char
+#bindkey '^H' backward-delete-char
 
 # Use incremental search
-bindkey "^R" history-incremental-search-backward
+#bindkey "^R" history-incremental-search-backward
