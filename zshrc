@@ -1,6 +1,6 @@
 # general settings
 # -----------------------------------------------------------------------------
-#source ~/.zsh/settings.zsh
+source ~/.zsh/settings.zsh
 
 # Prompt
 # -----------------------------------------------------------------------------
@@ -19,14 +19,14 @@ alias ls='ls -G -h'
 alias ll='ls -l'
 alias la='ll -a'
 
+source ~/.zsh/git.zsh
+
 # use selection for xclip
 #alias xclip='xclip -selection c'
 
 # alias from running elm in a docker image
 #alias elm='docker run -it --rm -v "$(pwd):/code" -w "/code" -e "HOME=/tmp" -u $UID:$GID -p 8000:8000 codesimple/elm:0.16'
 #alias jekyll='docker run -it --rm -v "$(pwd):/srv/jekyll" -p 4000:4000 jekyll/jekyll:latest jekyll serve'
-
-#source ~/.zsh/git.zsh
 
 # history substring search
 # ----------------------------------------------------------------------------- 

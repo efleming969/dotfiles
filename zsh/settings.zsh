@@ -1,14 +1,14 @@
 # Initialize completion
-autoload -Uz compinit && compinit
+#autoload -Uz compinit && compinit
 
 # Initialize editing command line
-autoload -U edit-command-line && zle -N edit-command-line
+#autoload -U edit-command-line && zle -N edit-command-line
 
 # Set automatic cd (typing directory name with no 'cd')
-setopt autocd
+#setopt autocd
 
 # Enable interactive comments (# on the command line)
-setopt interactivecomments
+#setopt interactivecomments
 
 # Nicer history
 HISTSIZE=1048576
@@ -21,11 +21,11 @@ setopt extendedhistory
 # Time to wait for additional characters in a sequence
 #KEYTIMEOUT=1 # corresponds to 10ms
 
-# Use vim as the editor
-#export EDITOR=vim
+# Use neovim as the editor
+export EDITOR=nvim
 
 # Use vim style line editing in zsh
-#bindkey -v
+bindkey -v
 # Movement
 #bindkey -a 'gg' beginning-of-buffer-or-history
 #bindkey -a 'G' end-of-buffer-or-history
