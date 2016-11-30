@@ -44,6 +44,7 @@ set cursorcolumn             " highlights the current column
 set nobackup                 " do not keep a backup file
 set noswapfile               " do not create a swap file (annoying)
 set clipboard=unnamedplus    " tells vim to use * register for yanks/puts
+set visualbell               " disable the audible bell
 
 " tab options
 " --------------------------------------------------------------------
@@ -67,7 +68,7 @@ set concealcursor=n          " show conceal text when in insert mode
 " --------------------------------------------------------------------
 set foldenable               "turn on folding
 set foldmethod=indent        "folding based on syntax file
-set foldlevel=2              "default fold level
+set foldlevel=1              "default fold level
 set foldopen=search,hor      "what movements open folds
 
 " color
